@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class EEmain {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		System.out.println("Program is running.");
 		Scanner stdIn = new Scanner(System.in);
@@ -12,17 +15,22 @@ public class EEmain {
 			String trigger = stdIn.next();
 			if (trigger.equalsIgnoreCase("ccs")) {
 				bingo = true;
+			} else {
+				bingo = false;
+				System.out.println("We are sorry. Please try again!");
 			}
-			bingo = false;
-			
 		} while (bingo = false);
 		System.out.println("BINGO!!!");
 		display();
 		stdIn.close();
 	}
 	
+	/**
+	 * Display all Easter egg messages.
+	 */
 	private static void display() {
-		System.out.println("The Crazy Code Surgeons - CCS");
+		//Need formatted output
+		System.out.printf("The Crazy Code Surgeons - CCS");
 		//new comment
 		//new comment
 		//this is last one
