@@ -26,6 +26,7 @@ public class EEmain {
 		//new comment
 		//new comment
 		//this is last one
+		//Trung comment to test
 		
 		
 	}
