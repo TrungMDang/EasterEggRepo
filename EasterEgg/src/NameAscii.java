@@ -17,11 +17,11 @@ public class NameAscii {
 	public void drawascii() {
 		BufferedImage image = new BufferedImage(144, 32, BufferedImage.TYPE_INT_RGB);
 		Graphics g = image.getGraphics();
-		g.setFont(new Font("Arial", Font.BOLD, 18));
+		g.setFont(new Font("Arial", Font.BOLD, 12));
 		Graphics2D graphics = (Graphics2D) g;
 		graphics.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING,
 				RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-		graphics.drawString("Emrullah", 6, 26);
+		graphics.drawString("CCS - Autumn 15", 6, 26);
 
 		for (int y = 0; y < 30; y++) {
 			StringBuilder sb = new StringBuilder();
