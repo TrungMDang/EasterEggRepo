@@ -49,7 +49,6 @@ public class EEmain {
 
 	}
 
-	
 
 	/**
 	 * Print to the console group name approximately centered on the console.
@@ -77,8 +76,8 @@ public class EEmain {
 		sn.draw();
 	}
 	private static void printNameAscii() {
-		NameAscii sn = new NameAscii();
-		sn.drawascii();
+		NameAscii na = new NameAscii();
+		na.drawascii();
 		
 	}
 }
