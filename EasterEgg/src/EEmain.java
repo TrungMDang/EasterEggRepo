@@ -43,10 +43,13 @@ public class EEmain {
 	private static void display() {
 		printGroupName();
 		printSpaceNeedle();
+		printNameAscii();
 		
 		//ADD CODE HERE, PLEASE
 
 	}
+
+	
 
 	/**
 	 * Print to the console group name approximately centered on the console.
@@ -72,5 +75,10 @@ public class EEmain {
 	private static void printSpaceNeedle() {
 		SpaceNeedle sn = new SpaceNeedle();
 		sn.draw();
+	}
+	private static void printNameAscii() {
+		NameAscii sn = new NameAscii();
+		sn.drawascii();
+		
 	}
 }
