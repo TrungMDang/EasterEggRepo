@@ -11,7 +11,8 @@ import java.util.Scanner;
  * @version 1.0
  */
 public class EEmain {
-
+	
+	final static int WIDTH = 112;
 	/**
 	 * Main uses a loop to check for right trigger then calls display() to create 
 	 * Easter egg objects.
@@ -43,6 +44,10 @@ public class EEmain {
 	private static void display() {
 		printGroupName();
 		printSpaceNeedle();
+		for (int i = 0; i < WIDTH; i++) {
+			System.out.print("-");
+			if (i == WIDTH - 1) System.out.println();
+		}
 		printNameAscii();
 		
 		//ADD CODE HERE, PLEASE
@@ -54,7 +59,10 @@ public class EEmain {
 	 * Print to the console group name approximately centered on the console.
 	 */
 	private static void printGroupName() {
-		System.out.println("-----------------------------------------------------------------------------------------------------------");
+		for (int i = 0; i < WIDTH; i++) {
+			System.out.print("-");
+			if (i == WIDTH - 1) System.out.println();
+		}
 		List<String> memberNames = new ArrayList<String>();
 		
 		memberNames.add("Trung Dang, ");
@@ -65,9 +73,11 @@ public class EEmain {
 		
 		GroupName gN = new GroupName(memberNames);
 		System.out.println(gN.toString());
-		System.out.println("-----------------------------------------------------------------------------------------------------------");	
+		for (int i = 0; i < WIDTH; i++) {
+			System.out.print("-");
+			if (i == WIDTH - 1) System.out.println();
+		}
 	}
-	
 	/**
 	 * Print a space needle by call method from SpaceNeedle class.
 	 */
