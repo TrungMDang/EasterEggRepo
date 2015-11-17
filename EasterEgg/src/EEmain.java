@@ -49,6 +49,15 @@ public class EEmain {
 			if (i == WIDTH - 1) System.out.println();
 		}
 		printNameAscii();
+		for (int i = 0; i < WIDTH; i++) {
+			System.out.print("-");
+			if (i == WIDTH - 1) System.out.println();
+		}
+		printCatAscii();
+		for (int i = 0; i < WIDTH; i++) {
+			System.out.print("-");
+			if (i == WIDTH - 1) System.out.println();
+		}
 		
 		//ADD CODE HERE, PLEASE
 
@@ -88,6 +97,11 @@ public class EEmain {
 	private static void printNameAscii() {
 		NameAscii na = new NameAscii();
 		na.drawascii();
+		
+	}
+	private static void printCatAscii() {
+		CatAscii ca = new CatAscii();
+		ca.catascii();
 		
 	}
 }
