@@ -58,11 +58,26 @@ public class EEmain {
 			System.out.print("-");
 			if (i == WIDTH - 1) System.out.println();
 		}
-		
+		printFace();
 		//ADD CODE HERE, PLEASE
-
+		printEverything();
 	}
 
+
+	private static void printEverything() {
+		PrintEverything ee = new PrintEverything();
+		ee.PrintName();
+		ee.PrintFace();
+		System.out.println();
+		ee.PrintPic();
+		
+	}
+
+	private static void printFace() {
+		PrintFace pF = new PrintFace();
+		System.out.println(pF.toString());
+		
+	}
 
 	/**
 	 * Print to the console group name approximately centered on the console.
@@ -96,12 +111,12 @@ public class EEmain {
 	}
 	private static void printNameAscii() {
 		NameAscii na = new NameAscii();
-		na.drawascii();
-		
+		//na.drawAscii();
+		System.out.println(na.drawAscii());
 	}
 	private static void printCatAscii() {
 		CatAscii ca = new CatAscii();
-		ca.catascii();
+		System.out.println(ca.toString());
 		
 	}
 }

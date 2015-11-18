@@ -11,10 +11,10 @@ import java.awt.image.BufferedImage;
  * November 15, 2015
  */
 public class NameAscii {
-	/**
+	/**s
 	 * Draw for ascii chracter
 	 */
-	public void drawascii() {
+	public String drawAscii() {
 		BufferedImage image = new BufferedImage(144, 32, BufferedImage.TYPE_INT_RGB);
 		Graphics g = image.getGraphics();
 		g.setFont(new Font("Arial", Font.PLAIN, 13));
@@ -22,14 +22,18 @@ public class NameAscii {
 		graphics.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING,
 				RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
 		graphics.drawString("CCS Autumn 15", 6, 30);
-
+		
+		StringBuilder sb1 = new StringBuilder();
 		for (int y = 0; y < 30; y++) {
 			StringBuilder sb = new StringBuilder();
 			for (int x = 0; x < 100; x++)
 				sb.append(image.getRGB(x, y) == -16777216 ? " " : image.getRGB(x, y) == -1 ? "@" : "$");
 			if (sb.toString().trim().isEmpty()) continue;
-			System.out.println(sb);
+			sb1.append("\n");
+			
+			sb1.append(sb.toString());
+			
 		}		
-
+		return sb1.toString();
 	}
 }

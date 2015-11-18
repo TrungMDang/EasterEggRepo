@@ -10,19 +10,21 @@ public class CatAscii {
 	/**
 	 * Draw cat picture 
 	 */
-	public void catascii() {
-		System.out.println("		      /\\     /\\  ");
-		System.out.println("		     /  \\___/  \\  ");
-		System.out.println("		    /           \\  ");
-	    System.out.println("		   /  (.)   (.)  \\  ");
-	    System.out.println("		 ((      /@\\      )) ");
-	    System.out.println("		   \\  ~       ~  /  ");
-	    System.out.println("		    \\ ~~(***)~~ /  ");
-	    System.out.println("		    //--------\\\\  ");
-	    System.out.println("		    =/////\\\\\\\\\\=  ");
-	    System.out.println("		    //  || || \\\\  ");
-	    System.out.println("		   //   || ||  \\\\  ");
-		
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("\t\t\t\t		      /\\     /\\  \n");
+		sb.append("\t\t\t\t		     /  \\___/  \\  \n");
+		sb.append("\t\t\t\t		    /           \\  \n");
+		sb.append("\t\t\t\t		   /  (.)   (.)  \\  \n");
+		sb.append("\t\t\t\t		 ((      /@\\      )) \n");
+		sb.append("\t\t\t\t		   \\  ~       ~  /  \n");
+		sb.append("\t\t\t\t		    \\ ~~(***)~~ /  \n");
+		sb.append("\t\t\t\t		    //--------\\\\  \n");
+		sb.append("\t\t\t\t		    =/////\\\\\\\\\\=  \n");
+		sb.append("\t\t\t\t		    //  || || \\\\  \n");
+		sb.append("\t\t\t\t		   //   || ||  \\\\  \n");
+	    return sb.toString();
 	}
 	
 }
